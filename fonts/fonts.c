@@ -36,9 +36,9 @@
 #ifdef FONTS_TERMINUS_6X12_ISO8859_1
 #include "data/font_terminus_6x12_iso8859_1.h"
 #endif
-#ifdef FONTS_TERMINUS_8X14_ISO8859_1
+//#ifdef FONTS_TERMINUS_8X14_ISO8859_1
 #include "data/font_terminus_8x14_iso8859_1.h"
-#endif
+//#endif
 #ifdef FONTS_TERMINUS_BOLD_8X14_ISO8859_1
 #include "data/font_terminus_bold_8x14_iso8859_1.h"
 #endif
@@ -138,11 +138,11 @@ const font_info_t *font_builtin_fonts[] = {
 #else
   [FONT_FACE_TERMINUS_6X12_ISO8859_1] = NULL,
 #endif
-#ifdef FONTS_TERMINUS_8X14_ISO8859_1
+//#ifdef FONTS_TERMINUS_8X14_ISO8859_1
   [FONT_FACE_TERMINUS_8X14_ISO8859_1] = &_fonts_terminus_8x14_iso8859_1_info,
-#else
-  [FONT_FACE_TERMINUS_8X14_ISO8859_1] = NULL,
-#endif
+//#else
+//  [FONT_FACE_TERMINUS_8X14_ISO8859_1] = NULL,
+//#endif
 #ifdef FONTS_TERMINUS_BOLD_8X14_ISO8859_1
   [FONT_FACE_TERMINUS_BOLD_8X14_ISO8859_1] =
     &_fonts_terminus_bold_8x14_iso8859_1_info,
