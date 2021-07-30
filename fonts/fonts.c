@@ -45,9 +45,9 @@
 #ifdef FONTS_TERMINUS_10X18_ISO8859_1
 #include "data/font_terminus_10x18_iso8859_1.h"
 #endif
-#ifdef FONTS_TERMINUS_BOLD_10X18_ISO8859_1
+//#ifdef FONTS_TERMINUS_BOLD_10X18_ISO8859_1
 #include "data/font_terminus_bold_10x18_iso8859_1.h"
-#endif
+//#endif
 #ifdef FONTS_TERMINUS_11X22_ISO8859_1
 #include "data/font_terminus_11x22_iso8859_1.h"
 #endif
@@ -69,9 +69,9 @@
 #ifdef FONTS_TERMINUS_16X32_ISO8859_1
 #include "data/font_terminus_16x32_iso8859_1.h"
 #endif
-#ifdef FONTS_TERMINUS_BOLD_16X32_ISO8859_1
+//#ifdef FONTS_TERMINUS_BOLD_16X32_ISO8859_1
 #include "data/font_terminus_bold_16x32_iso8859_1.h"
-#endif
+//#endif
 
 #ifdef FONTS_TERMINUS_6X12_KOI8_R
 #include "data/font_terminus_6x12_koi8_r.h"
@@ -154,12 +154,12 @@ const font_info_t *font_builtin_fonts[] = {
 #else
   [FONT_FACE_TERMINUS_10X18_ISO8859_1] = NULL,
 #endif
-#ifdef FONTS_TERMINUS_BOLD_10X18_ISO8859_1
+//#ifdef FONTS_TERMINUS_BOLD_10X18_ISO8859_1
   [FONT_FACE_TERMINUS_BOLD_10X18_ISO8859_1] =
     &_fonts_terminus_bold_10x18_iso8859_1_info,
-#else
-  [FONT_FACE_TERMINUS_BOLD_10X18_ISO8859_1] = NULL,
-#endif
+//#else
+ // [FONT_FACE_TERMINUS_BOLD_10X18_ISO8859_1] = NULL,
+//#endif
 #ifdef FONTS_TERMINUS_11X22_ISO8859_1
   [FONT_FACE_TERMINUS_11X22_ISO8859_1] = &_fonts_terminus_11x22_iso8859_1_info,
 #else
@@ -198,12 +198,11 @@ const font_info_t *font_builtin_fonts[] = {
 #else
   [FONT_FACE_TERMINUS_16X32_ISO8859_1] = NULL,
 #endif
-#ifdef FONTS_TERMINUS_BOLD_16X32_ISO8859_1
-  [FONT_FACE_TERMINUS_BOLD_16X32_ISO8859_1] =
-    &_fonts_terminus_bold_16x32_iso8859_1_info,
-#else
-  [FONT_FACE_TERMINUS_BOLD_16X32_ISO8859_1] = NULL,
-#endif
+//#ifdef FONTS_TERMINUS_BOLD_16X32_ISO8859_1
+  [FONT_FACE_TERMINUS_BOLD_16X32_ISO8859_1] = &_fonts_terminus_bold_16x32_iso8859_1_info,
+//#else
+//  [FONT_FACE_TERMINUS_BOLD_16X32_ISO8859_1] = NULL,
+//#endif
 
 #ifdef FONTS_TERMINUS_6X12_KOI8_R
   [FONT_FACE_TERMINUS_6X12_KOI8_R] = &_fonts_terminus_6x12_koi8_r_info,
